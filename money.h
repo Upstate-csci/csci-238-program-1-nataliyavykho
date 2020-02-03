@@ -11,6 +11,7 @@
 #include <sstream>
 #include <iomanip>
 #include <fstream>
+#include <locale>
 
 using namespace std;
 class Money
@@ -18,6 +19,11 @@ class Money
 private:
     double total;
     int hundreds, tens, fives, ones, quarters, dimes, nickels, cents;
+    int hundreds2, tens2, fives2, ones2, quarters2, dimes2, nickels2, cents2;
+
+    //double cost, amountPaid;
+    float cost, amountPaid;
+
 public:
     string toString();
     string toCurrency(double amount);
